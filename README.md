@@ -1,4 +1,4 @@
-# 🔐 Metadata Analyzer & Sanitization Tool
+# 🔐 Metadata Hacker
 
 A powerful command-line utility for analyzing, removing, and forging image metadata. Perfect for privacy-conscious users, security professionals, and anyone concerned about hidden data in their images.
 
