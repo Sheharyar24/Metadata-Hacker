@@ -84,7 +84,7 @@ class MetadataHacker:
         elif choice == '5':
           if modifications_made:
             # Save the new file
-            new_path = os.path.splitext(image_path)[0] + "_forged" + os.path.splitext(image_path)[1]
+            new_path = os.path.splitext(image_path)[0] + "_modified" + os.path.splitext(image_path)[1]
             exif_bytes = piexif.dump(exif_dict)
             img = PIL.Image.open(image_path)
             img.save(new_path, exif=exif_bytes)
@@ -127,7 +127,7 @@ def main():
 
       print(Fore.GREEN + '\n[?] SELECT OPERATION:')
       print(Fore.LIGHTGREEN_EX + '    [1] GHOST FILE (REMOVE ALL METADATA)')
-      print(Fore.LIGHTGREEN_EX + '    [2] FORGE DATA (MODIFY METADATA)')
+      print(Fore.LIGHTGREEN_EX + '    [2] MODIFY METADATA')
       print(Fore.LIGHTGREEN_EX + '    [3] ABORT')
 
       choice = input(Fore.GREEN + "[?] >> ").strip()
